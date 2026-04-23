@@ -3,10 +3,75 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My Site</title>
+  <title>CRL CD</title>
+  <meta name="description" content="CRL CD landing page">
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --text: #e5e7eb;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, #0f172a, #111827);
+      color: var(--text);
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+    .wrap {
+      width: 100%;
+      max-width: 900px;
+      background: rgba(17, 24, 39, 0.92);
+      border: 1px solid rgba(148, 163, 184, 0.2);
+      border-radius: 20px;
+      padding: 40px;
+      text-align: center;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+    }
+    h1 { margin: 0 0 12px; font-size: clamp(2rem, 5vw, 4rem); }
+    p { color: var(--muted); font-size: 1.1rem; line-height: 1.6; }
+    .btn {
+      display: inline-block;
+      margin-top: 24px;
+      background: var(--accent);
+      color: #082f49;
+      text-decoration: none;
+      padding: 14px 22px;
+      border-radius: 999px;
+      font-weight: bold;
+    }
+    .btn:hover { filter: brightness(1.05); }
+    .meta {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome</h1>
-  <p>This site is hosted on GitHub Pages.</p>
+  <main class="wrap">
+    <header>
+      <h1>CRL CD</h1>
+      <p>A simple landing page for your project or product.</p>
+    </header>
+
+    <section>
+      <p>
+        Use this space to explain what CRL CD is, who it is for, and what action
+        visitors should take next.
+      </p>
+      <a class="btn" href="#contact">Get Started</a>
+    </section>
+
+    <footer class="meta" id="contact">
+      <p>Contact: your@email.com</p>
+    </footer>
+  </main>
 </body>
 </html>
